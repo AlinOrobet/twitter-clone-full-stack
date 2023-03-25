@@ -5,9 +5,9 @@ import SidebarLogo from "./SidebarLogo";
 import SidebarTweetButton from "./SidebarTweetButton";
 const Sidebar = () => {
   return (
-    <div className="col-span-1 h-full pr-4 md:pr-6">
+    <div className="col-span-1 h-full mx-auto md:mx-0 md:pr-4 lg:pr-6">
       <div className="flex flex-col items-end h-screen justify-between">
-        <div className="lg:w-[230px]">
+        <div className="">
           <SidebarLogo />
           {SidebarData.map((item) => (
             <SidebarItem key={item.href} href={item.href} label={item.label} icon={item.icon} />
