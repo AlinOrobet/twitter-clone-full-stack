@@ -1,5 +1,6 @@
 import useLoginModal from "@/hooks/useLoginModal";
 import useRegisterModal from "@/hooks/useRegisterModal";
+import {signIn} from "next-auth/react";
 import {useCallback, useState} from "react";
 import Input from "../Input";
 import Modal from "../Modal";
@@ -13,7 +14,8 @@ function LoginModal() {
   const onSubmit = useCallback(async () => {
     try {
       setIsLoading(true);
-      //TODO add LOG IN
+
+      await signIn("credentials", {email, password});
 
       loginModal.onClose();
     } catch (err) {
@@ -21,7 +23,7 @@ function LoginModal() {
     } finally {
       setIsLoading(false);
     }
-  }, [loginModal]);
+  }, [loginModal, email, password]);
 
   const onToggle = useCallback(() => {
     if (isLoading) {
@@ -41,6 +43,7 @@ function LoginModal() {
       />
       <Input
         placeholder="Password"
+        type="password"
         onChange={(e) => setPassword(e.target.value)}
         value={password}
         disabled={isLoading}

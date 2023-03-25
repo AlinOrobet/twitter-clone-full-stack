@@ -18,21 +18,25 @@ export const SidebarData = [
     label: "Notifications",
     href: "/notifications",
     icon: IoNotificationsOutline,
+    auth: true,
   },
   {
     label: "Messages",
     href: "/messages",
     icon: CiMail,
+    auth: true,
   },
   {
     label: "Bookmarks",
     href: "/bookmarks",
     icon: BsBookmark,
+    auth: true,
   },
   {
     label: "Profile",
     href: "/users/123",
     icon: BsPerson,
+    auth: true,
   },
   {
     label: "More",
