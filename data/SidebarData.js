@@ -34,7 +34,6 @@ export const SidebarData = [
   },
   {
     label: "Profile",
-    href: "/users/123",
     icon: BsPerson,
     auth: true,
   },
