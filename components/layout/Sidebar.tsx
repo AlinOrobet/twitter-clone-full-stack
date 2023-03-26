@@ -14,7 +14,7 @@ const Sidebar = () => {
           <SidebarLogo />
           {SidebarData.map((item) => (
             <SidebarItem
-              key={item.href}
+              key={item.label}
               href={item.label === "Profile" ? `/users/${currentUser?.id}` : item.href}
               label={item.label}
               icon={item.icon}
