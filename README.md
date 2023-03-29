@@ -1,38 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Twitter Clone - Full Stack  
 
-## Getting Started
+[Demo Live](https://twitter-clone-full-stack-mu.vercel.app/)
 
-First, run the development server:
+# Table of contents
+- About project
+- Features
+- Languages and Tools
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# About project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The main objective of my project was to learn Typescript and how to work with the back-end in Next.js. To achieve this, I attempted to replicate the Twitter website. In this project, I allowed anyone to create a user account, create a post, follow other people, comment on other users posts, and like other users posts.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+# Features
+Among the main features are:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Authentication system
+- Notification system
+- Image Upload using Base64 strings
+- Prisma ORM with MongoDB
+- Responsive Layout
+- 1 To Many Relations (User - Post)
+- Many To Many Relations (Post - Comment)
+- Following functionality
+- Comments / Replies
+- Likes functionality
+- Vercel Deployment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Languages and Tools
+- [Nextjs](https://nextjs.org/)
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Next-auth](https://next-auth.js.org/)
+- [Mongodb](https://www.mongodb.com/)
+- [Prisma](https://www.prisma.io/)
+- [Axios](https://www.digitalocean.com/community/tutorials/react-axios-react)
