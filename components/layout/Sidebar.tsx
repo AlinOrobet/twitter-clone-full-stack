@@ -21,6 +21,7 @@ const Sidebar = () => {
       label: "Explore",
       href: "/explore",
       icon: CiSearch,
+      auth: true,
     },
     {
       label: "Notifications",
@@ -47,10 +48,6 @@ const Sidebar = () => {
       icon: BsPerson,
       auth: true,
     },
-    {
-      label: "More",
-      icon: CiCircleMore,
-    },
   ];
 
   return (
@@ -68,8 +65,7 @@ const Sidebar = () => {
               alert={item.alert}
             />
           ))}
-
-          <SidebarTweetButton />
+          {!currentUser && <SidebarTweetButton />}
         </div>
         {currentUser && (
           <SidebarItem
